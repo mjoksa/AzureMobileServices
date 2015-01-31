@@ -1,8 +1,10 @@
-# Azure Mobile Services Samples
+## Azure Mobile Services Samples
+
+## :white_medium_square: What's is ?
 
 Samples and articles to help developers to use Azure Mobile Services.
 
-# How to
+## :white_medium_square: How to
 
 - [How to see the webconfig file published] (http://www.saramgsilva.com/index.php/2015/azure-mobile-services-how-to-see-the-webconfig-file-published/)
 
@@ -12,7 +14,7 @@ Samples and articles to help developers to use Azure Mobile Services.
 
 - [Avoid nightmares updating Azure Mobile Services projects](http://www.saramgsilva.com/index.php/2015/avoid-nightmares-updating-azure-mobile-services-projects/)
 
-## Integrating Menu App with Azure Mobile Services
+## :white_medium_square: Integrating Menu App with Azure Mobile Services
 
 - [Microsoft’s Windows App Studio Beta: Connecting a Menu App to Azure Mobile Service](http://wp.me/p4LXhq-Dv)
 
@@ -21,7 +23,7 @@ Samples and articles to help developers to use Azure Mobile Services.
 - [Microsoft’s Windows App Studio Beta: Add support for Push Notification](http://www.saramgsilva.com/index.php/2014/microsofts-windows-appstudio-add-support-for-push-notification/)
 
 
-## Azure Mobile Services Guide
+## :white_medium_square: Azure Mobile Services Guide
 
 - [Azure Mobile Services Resources ( .Net BackEnd)](https://curah.microsoft.com/302406/azure-mobile-services-net-backend)
 
@@ -40,6 +42,34 @@ Samples and articles to help developers to use Azure Mobile Services.
 	- [Azure Mobile Service for client apps - Windows Developers] (https://curah.microsoft.com/267630/azure-mobile-service-for-client-apps-windows-developers)
 	
 	
-# Tips
+## :white_medium_square: Tips
 
 - [Class diagram: a easy way to understand code](http://www.saramgsilva.com/index.php/2014/class-diagram-a-easy-way-to-understand-code/)
+
+
+## :white_medium_square: Build the project
+
+
+To develop on this project, just clone the project to your computer, package restore is enable so build the solution first, if you get any errors try to build again and if necessary close the solution and open again to load the references.
+
+
+## :white_medium_square: Contributors
+
+
+<MTMarkdownOptions output='html4'>
+<a href="https://twitter.com/saramgsilva"><img src="http://saramgsilva.github.io/NotificationHubs/images/Eu_400x400.png" height="50"/></a>
+</MTMarkdownOptions>  
+
+
+## :white_medium_square: Contribute
+
+Everbody is welcome to contribute.
+
+Twitter hashtag : [#AMSSamples](https://twitter.com/search?f=realtime&q=%23amssamples&src=typd)
+
+
+## :white_medium_square: License
+
+
+MIT License (MIT), read more about it in the [LICENSE file](https://raw.githubusercontent.com/saramgsilva/AMSToolkit/master/LICENSE.txt).
+
