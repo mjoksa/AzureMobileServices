@@ -43,7 +43,6 @@ namespace CustomersSampleService
             // line. Comment it out again when you deploy your service for production use.
             config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
             
-            
             AutoMapperDefinition();
             var migrator = new DbMigrator(new Configuration());
             migrator.Update();

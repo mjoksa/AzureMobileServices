@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
+using AMSToolkit.Extensions;
 using Microsoft.WindowsAzure.Mobile.Service;
 using CustomersSampleService.DataObjects;
 using CustomersSampleService.DomainManagers;
-using CustomersSampleService.Extensions;
 using CustomersSampleService.Models;
 
 namespace CustomersSampleService.Controllers
@@ -20,7 +22,7 @@ namespace CustomersSampleService.Controllers
         /// <summary>
         /// The _context
         /// </summary>
-        private ExistingContext _context;
+        private CustomersContext _context;
 
         /// <summary>
         /// Initializes the <see cref="T:System.Web.Http.ApiController" /> instance with the specified controllerContext.
@@ -29,7 +31,7 @@ namespace CustomersSampleService.Controllers
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            _context = new ExistingContext();
+            _context = new CustomersContext();
             DomainManager = new OrderDomainManager(_context, Request, Services);
         }
 
@@ -40,7 +42,15 @@ namespace CustomersSampleService.Controllers
         /// <returns>IQueryable&lt;OrderDto&gt;.</returns>
         public IQueryable<OrderDto> GetAllOrderDto()
         {
-            return Query(); 
+            try
+            {
+                return Query();
+            }
+            catch (DbEntityValidationException entityValidationException)
+            {
+                Debug.WriteLine(entityValidationException.GetDetails());
+                throw;
+            }
         }
 
         // GET tables/Order/48D68C86-6EA6-4C25-AA33-223FC9A27959
@@ -79,7 +89,7 @@ namespace CustomersSampleService.Controllers
         /// <returns>Task&lt;IHttpActionResult&gt;.</returns>
         public async Task<IHttpActionResult> PostOrderDto(OrderDto item)
         {
-            OrderDto current = await InsertAsync(item);
+            var current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }
 

@@ -29,7 +29,7 @@ namespace CustomersSample
             //    }
             //};
 
-            CustomersService = new MobileServiceClient("http://customersample.azure-mobile.net/", "WfSPqJCRgYXCyQycqMTTUWPtpNvOfg19")
+            CustomersService = new MobileServiceClient("http://customerssample.azure-mobile.net/", "UlWmZgwVjzMXOgCwRHrGjxOFeFXClk85")
             {
                 SerializerSettings = new MobileServiceJsonSerializerSettings()
                 {

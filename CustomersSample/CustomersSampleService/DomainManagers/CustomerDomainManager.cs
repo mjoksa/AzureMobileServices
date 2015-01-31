@@ -23,7 +23,7 @@ namespace CustomersSampleService.DomainManagers
     /// </summary>
     public class CustomerDomainManager : MappedEntityDomainManager<CustomerDto, Customer>
     {
-        private ExistingContext _context;
+        private CustomersContext _context;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomerDomainManager"/> class.
@@ -37,7 +37,7 @@ namespace CustomersSampleService.DomainManagers
         /// <param name="services">
         /// The services.
         /// </param>
-        public CustomerDomainManager(ExistingContext context, HttpRequestMessage request, ApiServices services)
+        public CustomerDomainManager(CustomersContext context, HttpRequestMessage request, ApiServices services)
             : base(context, request, services)
         {
             Request = request;

@@ -7,7 +7,7 @@ namespace CustomersSampleService.Migrations
     /// <summary>
     /// Class Configuration. This class cannot be inherited.
     /// </summary>
-    internal sealed class Configuration : DbMigrationsConfiguration<ExistingContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CustomersContext>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Configuration"/> class.
@@ -21,7 +21,7 @@ namespace CustomersSampleService.Migrations
         /// Seeds the specified context.
         /// </summary>
         /// <param name="context">The context.</param>
-        protected override void Seed(ExistingContext context)
+        protected override void Seed(CustomersContext context)
         {
             context.Customers.AddOrUpdate(item=>item.Id, new Customer()
             {

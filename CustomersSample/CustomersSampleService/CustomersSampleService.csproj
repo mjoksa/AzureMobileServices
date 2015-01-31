@@ -60,6 +60,9 @@
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
+    <Reference Include="AMSToolkit">
+      <HintPath>..\TempLibs\Debug-AMSToolkit\AMSToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
@@ -212,20 +215,21 @@
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="DataObjects\CustomerDto.cs" />
     <Compile Include="DataObjects\OrderDto.cs" />
     <Compile Include="DomainManagers\OrderDomainManager.cs" />
-    <Compile Include="Extensions\DbContextExtensions.cs" />
-    <Compile Include="Migrations\201501302343459_V0.cs" />
-    <Compile Include="Migrations\201501302343459_V0.Designer.cs">
-      <DependentUpon>201501302343459_V0.cs</DependentUpon>
+    <Compile Include="Migrations\201501312103497_V0.cs" />
+    <Compile Include="Migrations\201501312103497_V0.Designer.cs">
+      <DependentUpon>201501312103497_V0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\ExistingContext.cs" />
+    <Compile Include="Models\CustomersContext.cs" />
     <Compile Include="DomainManagers\CustomerDomainManager.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
@@ -254,8 +258,8 @@
     <Content Include="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201501302343459_V0.resx">
-      <DependentUpon>201501302343459_V0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201501312103497_V0.resx">
+      <DependentUpon>201501312103497_V0.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -1,13 +1,17 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="MobileCustomer.cs" company="saramgsilva">
+// <copyright file="CustomerDto.cs" company="saramgsilva">
 //   Copyright (c) 2014 saramgsilva. All rights reserved.
 // </copyright>
 // <summary>
-//   The mobile customer.
+//   The CustomerDto type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+#if PCL
+using AMSToolkit.Model;
+#else
 using Microsoft.WindowsAzure.Mobile.Service;
+#endif
 
 namespace CustomersSampleService.DataObjects
 {

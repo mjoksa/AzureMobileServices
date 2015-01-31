@@ -1,16 +1,17 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="MobileOrder.cs" company="saramgsilva">
+// <copyright file="OrderDto.cs" company="saramgsilva">
 //   Copyright (c) 2014 saramgsilva. All rights reserved.
 // </copyright>
 // <summary>
-//   Defines the MobileOrder type.
+//   Defines the OrderDto type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-#if !PCL
-using System.ComponentModel.DataAnnotations.Schema;
-#endif
+#if PCL
+using AMSToolkit.Model;
+#else
 using Microsoft.WindowsAzure.Mobile.Service;
+#endif
 
 namespace CustomersSampleService.DataObjects
 {
