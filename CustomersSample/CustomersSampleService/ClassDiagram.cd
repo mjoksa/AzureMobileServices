@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CustomersSampleService.Models.Order">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="Microsoft.WindowsAzure.Mobile.Service.EntityData" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="2.824" />
+        <Point X="10.5" Y="3.625" />
+        <Point X="8.75" Y="3.625" />
+        <Point X="8.75" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Customer" Type="CustomersSampleService.Models.Customer" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="5.25" />
+        <Point X="6.75" Y="5.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.091" Y="-0.431" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAIAAAAAAAAEAAAAABAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CustomersSampleService.Models.ExistingContext">
+    <Position X="5.75" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ExistingContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Customers" />
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CustomersSampleService.Models.Customer">
+    <Position X="4.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CustomersSampleService.DataObjects.CustomerDto">
+    <Position X="11" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\CustomerDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomersSampleService.DataObjects.OrderDto">
+    <Position X="13.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAEQAAAABAAAAAAgAAAAAA=</HashCode>
+      <FileName>DataObjects\OrderDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.WindowsAzure.Mobile.Service.EntityData">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
