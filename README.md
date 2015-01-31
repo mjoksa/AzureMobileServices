@@ -27,17 +27,17 @@ Samples and articles to help developers to use Azure Mobile Services.
 
 	This curation has the goal to expose all resource about .Net BackEnd provided by Azure Mobile Services
 
-- [Azure Mobile Services Resources ( JS BackEnd)] (https://curah.microsoft.com/302407/azure-mobile-services-js-backend)
+- [Azure Mobile Services Resources (JS BackEnd)](https://curah.microsoft.com/302407/azure-mobile-services-js-backend)
 
 	This curation has the goal to expose all resource about JS BackEnd provided by Azure Mobile Services.
 
-- [Azure Mobile Services for Client Apps] (https://curah.microsoft.com/267632/azure-mobile-services-for-client-apps)
+- [Azure Mobile Services for Client Apps](https://curah.microsoft.com/267632/azure-mobile-services-for-client-apps)
 	
 	This curation has the goal to expose the references for the curations:
-	- Azure Mobile Service for client apps - Android Developers (Native) (https://curah.microsoft.com/267629/azure-mobile-service-for-client-apps-android-developers-native)
-	- Azure Mobile Service for client apps - IOS Developers (Native) (https://curah.microsoft.com/267628/azure-mobile-service-for-client-apps-ios-developers-native)
-	- Azure Mobile Service for client apps - Xamarin Developers (https://curah.microsoft.com/267631/azure-mobile-service-for-client-apps-xamarin-developers)
-	- Azure Mobile Service for client apps - Windows Developers (https://curah.microsoft.com/267630/azure-mobile-service-for-client-apps-windows-developers)
+	- [Azure Mobile Service for client apps - Android Developers (Native)] (https://curah.microsoft.com/267629/azure-mobile-service-for-client-apps-android-developers-native)
+	- [Azure Mobile Service for client apps - IOS Developers (Native)] (https://curah.microsoft.com/267628/azure-mobile-service-for-client-apps-ios-developers-native)
+	- [Azure Mobile Service for client apps - Xamarin Developers] (https://curah.microsoft.com/267631/azure-mobile-service-for-client-apps-xamarin-developers)
+	- [Azure Mobile Service for client apps - Windows Developers] (https://curah.microsoft.com/267630/azure-mobile-service-for-client-apps-windows-developers)
 	
 	
 # Tips
