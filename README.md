@@ -74,8 +74,9 @@ To develop on this project, just clone the project to your computer, package res
 
 <MTMarkdownOptions output='html4'>
 <a href="https://twitter.com/saramgsilva"><img src="http://saramgsilva.github.io/NotificationHubs/images/Eu_400x400.png" height="50"/></a>
+</MTMarkdownOptions> <MTMarkdownOptions output='html4'>
+<a href="https://twitter.com/loeffelmann"><img src="http://s20.postimg.org/ld7koy2n1/loeffelmann.jpg" height="50"/></a>
 </MTMarkdownOptions>  
-
 
 ## :white_medium_square: Contribute
 
