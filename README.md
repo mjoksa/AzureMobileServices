@@ -48,16 +48,15 @@ This curation has the goal to expose all resource about JS BackEnd provided by A
 	
 This curation has the goal to expose the references for the curations:
 
-[Azure Mobile Service for client apps - Android Developers (Native)](https://curah.microsoft.com/267629/azure-mobile-service-for-client-apps-android-developers-native)
+<MTMarkdownOptions output='html4'><a href="https://curah.microsoft.com/267630/azure-mobile-service-for-client-apps-windows-developers">
+<img src=http://s20.postimg.org/eueqc0qfx/Windows_logo_2012.png"" height="40"/></a><a href="https://curah.microsoft.com/267631/azure-mobile-service-for-client-apps-xamarin-developers">
+<img src="http://s20.postimg.org/icqq8erbx/xamarin_logo.jpg" height="40"/></a><a href="https://curah.microsoft.com/267629/azure-mobile-service-for-client-apps-android-developers-native">
+<img src="http://s20.postimg.org/4t9w2pdct/logo_android_png.png" height="50"/></a><a href="https://curah.microsoft.com/267628/azure-mobile-service-for-client-apps-ios-developers-native">
+<img src=http://s20.postimg.org/syalkexnh/objc.png"" height="50"/></a>
+</MTMarkdownOptions> 
 
-[Azure Mobile Service for client apps - IOS Developers (Native)](https://curah.microsoft.com/267628/azure-mobile-service-for-client-apps-ios-developers-native)
 
-[Azure Mobile Service for client apps - Xamarin Developers](https://curah.microsoft.com/267631/azure-mobile-service-for-client-apps-xamarin-developers)
 
-[Azure Mobile Service for client apps - Windows Developers](https://curah.microsoft.com/267630/azure-mobile-service-for-client-apps-windows-developers)
-	
-	
-	
 ## :white_medium_square: Tips
 
 :pushpin: [Class diagram: a easy way to understand  code](http://www.saramgsilva.com/index.php/2014/class-diagram-a-easy-way-to-understand-code/)
