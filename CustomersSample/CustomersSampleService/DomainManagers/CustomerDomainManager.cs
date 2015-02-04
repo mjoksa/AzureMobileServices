@@ -41,7 +41,17 @@ namespace CustomersSampleService.DomainManagers
             : base(context, request, services)
         {
             Request = request;
-            this._context = context;
+            _context = context;
+        }
+
+        /// <summary>
+        /// Sets the original version.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="version">The version.</param>
+        protected override void SetOriginalVersion(Customer model, byte[] version)
+        {
+            _context.Entry(model).OriginalValues["Version"] = version;
         }
 
         /// <summary>

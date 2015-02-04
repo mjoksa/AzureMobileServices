@@ -94,10 +94,10 @@ namespace CustomersSampleService.Tests
         }
 
         /// <summary>
-        /// Insert, lookup, update, delete and lookup an order.
+        /// Insert an order
         /// </summary>
         [TestMethod]
-        public async Task Insert_Lookup_Update_Delete_Lookup_Order()
+        public async Task InsertOrderAsync()
         {
             MobileServiceInvalidOperationException exception = null;
             string content;
@@ -121,13 +121,36 @@ namespace CustomersSampleService.Tests
                 Assert.AreEqual(item.Quantity, Quantity);
                 var lookupItem = await table.LookupAsync(item.Id);
                 Assert.IsNotNull(lookupItem);
+                Assert.AreEqual(lookupItem.Item, ItemValue);
+                Assert.AreEqual(lookupItem.Quantity, Quantity);
+            }
+            catch (MobileServiceInvalidOperationException mobileServiceInvalidOperationException)
+            {
+                exception = mobileServiceInvalidOperationException;
+            }
+            if (exception != null)
+            {
+                content = await exception.Response.Content.ReadAsStringAsync();
+                Debug.WriteLine(content);
+                Assert.Fail(content);
+            }
+        }
 
-                item.Item = ItemValueUpdate;
-                await table.UpdateAsync(item);
-                Assert.IsNotNull(item);
-                Assert.AreEqual(item.Item, ItemValueUpdate);
-                Assert.AreEqual(item.Quantity, Quantity);
-                var id = item.Id;
+        /// <summary>
+        /// delete order as an asynchronous operation.
+        /// </summary>
+        /// <returns>Task.</returns>
+        [TestMethod]
+        public async Task DeleteOrderAsync()
+        {
+            MobileServiceInvalidOperationException exception = null;
+            string content;
+            try
+            {
+                var table = AzureMobileService.CustomersService.GetTable<Order>();
+                var orders = await table.ToListAsync();
+                var item = orders.First();
+                var id = orders.First().Id;
                 await table.DeleteAsync(item);
                 try
                 {
@@ -137,6 +160,41 @@ namespace CustomersSampleService.Tests
                 {
                     Assert.IsTrue(ex.Response.StatusCode == HttpStatusCode.NotFound);
                 }
+            }
+            catch (MobileServiceInvalidOperationException mobileServiceInvalidOperationException)
+            {
+                exception = mobileServiceInvalidOperationException;
+            }
+            if (exception != null)
+            {
+                content = await exception.Response.Content.ReadAsStringAsync();
+                Debug.WriteLine(content);
+                Assert.Fail(content);
+            }
+        }
+
+        /// <summary>
+        /// update order as an asynchronous operation.
+        /// </summary>
+        /// <returns>Task.</returns>
+        [TestMethod]
+        public async Task UpdateOrderAsync()
+        {
+            MobileServiceInvalidOperationException exception = null;
+            string content;
+            try
+            {
+                var table = AzureMobileService.CustomersService.GetTable<Order>();
+                var orders = await table.ToListAsync();
+                var item = orders.First();
+                item.Item = ItemValueUpdate;
+                await table.UpdateAsync(item);
+                Assert.IsNotNull(item);
+                Assert.AreEqual(item.Item, ItemValueUpdate);
+                Assert.AreEqual(item.Quantity, Quantity);
+                var lookupItem = await table.LookupAsync(item.Id);
+                Assert.IsNotNull(lookupItem);
+                Assert.AreEqual(lookupItem.Item, ItemValueUpdate);
             }
             catch (MobileServiceInvalidOperationException mobileServiceInvalidOperationException)
             {

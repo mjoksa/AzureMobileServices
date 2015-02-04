@@ -7,6 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -42,6 +43,16 @@ namespace CustomersSampleService.DomainManagers
         {
             Request = request;
             this._context = context;
+        }
+
+        /// <summary>
+        /// Sets the original version.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="version">The version.</param>
+        protected override void SetOriginalVersion(Order model, byte[] version)
+        {
+            _context.Entry(model).OriginalValues["Version"] = version;
         }
 
         /// <summary>
@@ -82,7 +93,6 @@ namespace CustomersSampleService.DomainManagers
         /// </returns>
         /// The exception <exception cref="HttpResponseException">.
         /// </exception>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1631:DocumentationMustMeetCharacterPercentage", Justification = "Reviewed. Suppression is OK here."), SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1630:DocumentationTextMustContainWhitespace", Justification = "Reviewed. Suppression is OK here.")]
         public override async Task<OrderDto> UpdateAsync(string id, Delta<OrderDto> patch)
         {
             return await base.UpdateEntityAsync(patch, id);

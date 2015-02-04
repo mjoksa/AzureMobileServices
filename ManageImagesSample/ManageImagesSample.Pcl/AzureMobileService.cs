@@ -1,15 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="AzureMobileService.cs" company="saramgsilva">
-//   Copyright (c) 2014 saramgsilva. All rights reserved.
-// </copyright>
-// <summary>
-//   The azure mobile service.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using Microsoft.WindowsAzure.MobileServices;
-
-namespace CustomersSample
+﻿using Microsoft.WindowsAzure.MobileServices;
+namespace ManageImagesSample.Pcl
 {
     /// <summary>
     /// The azure mobile service.
@@ -29,7 +19,7 @@ namespace CustomersSample
             //    }
             //};
 
-            CustomersService = new MobileServiceClient("http://customerssample.azure-mobile.net/", "PeWWKoKVzjWrLcIvYZQpxVIjRYHjjw51")
+            CustomersService = new MobileServiceClient("", "")
             {
                 SerializerSettings = new MobileServiceJsonSerializerSettings()
                 {

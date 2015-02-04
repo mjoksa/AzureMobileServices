@@ -10,7 +10,7 @@
 <HelpConfigurations selected="HelpFile">
   <HelpConfiguration name="HelpFile">
     <OutputPath>.\Help</OutputPath>
-    <HelpFileName>CustomersSample</HelpFileName>
+    <HelpFileName>ManageImagesSample</HelpFileName>
     <ImageFolderPath />
     <HtmlFormats>
       <HtmlHelp>true</HtmlHelp>
