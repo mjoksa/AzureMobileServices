@@ -23,7 +23,12 @@ Samples and articles to help developers to use Azure Mobile Services.
 
 :pushpin: [How to creating a dev and prod environments](http://www.saramgsilva.com/index.php/2014/azure-mobile-services-creating-dev-prod-environment/)
 
+## :white_medium_square: Avoid nightmares
+
 :pushpin: [Avoid nightmares updating Azure Mobile Services projects](http://www.saramgsilva.com/index.php/2015/avoid-nightmares-updating-azure-mobile-services-projects/)
+
+:pushpin: [Avoid nightmares using EF First Migration in Azure Mobile Services](http://www.saramgsilva.com/index.php/2015/avoid-nightmares-using-ef-first-migration-in-azure-mobile-services/)
+
 
 ## :white_medium_square: Integrating Menu App with Azure Mobile Services
 
