@@ -12,8 +12,25 @@ Samples and articles to help developers to use Azure Mobile Services.
 <a href="http://s20.postimg.org/9mtn7k9ul/2015_01_31_21_43_30.png"><img src="http://s20.postimg.org/9mtn7k9ul/2015_01_31_21_43_30.png" height="250"/></a>
 </MTMarkdownOptions>  
 
+This sample supports:
+- Migrations
+- Relationship 1:N
+- Integrated tests to verify the CRUD Operations
 
-:warning: The sample provided uses [AMSToolkit](https://github.com/saramgsilva/AMSToolkit).
+:pushpin: [ManageImagesSample](https://github.com/saramgsilva/AzureMobileServices/tree/master/ManageImagesSample)
+
+This sample supports:
+- Migrations
+- Define Url and SasQueryString to client upload images to blob storage
+- Delete Url from blob storage when the image change
+- integrated tests to verify the CRUD Operations
+
+:pushpin: [MigrationsSample](https://github.com/saramgsilva/AzureMobileServices/tree/master/MigrationsSample)
+
+This sample supports:
+- Migrations
+
+:warning: The samples provided uses [AMSToolkit](https://github.com/saramgsilva/AMSToolkit).
 
 ## :white_medium_square: How to
 
