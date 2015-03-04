@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFRelationshipSample.Models.User">
+    <Position X="1" Y="2" Width="2" />
+    <AssociationLine Name="Friends" Type="EFRelationshipSample.Models.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.438" Y="2" />
+        <Point X="1.438" Y="1.417" />
+        <Point X="2.625" Y="1.417" />
+        <Point X="2.625" Y="2" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.256" Y="0.373" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="UnFriends" Type="EFRelationshipSample.Models.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.5" Y="3.233" />
+        <Point X="1.5" Y="3.983" />
+        <Point X="2.625" Y="3.983" />
+        <Point X="2.625" Y="3.233" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.204" Y="0.57" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Friends" />
+      <Property Name="UnFriends" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.DataObjects.CountryDto">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\CountryDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.DataObjects.CityDto">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAIQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\CityDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.DataObjects.UserDto">
+    <Position X="1" Y="5" Width="1.5" />
+    <AssociationLine Name="Friends" Type="EFRelationshipSample.DataObjects.UserDto" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.312" Y="6.233" />
+        <Point X="1.312" Y="6.831" />
+        <Point X="2.188" Y="6.831" />
+        <Point X="2.188" Y="6.233" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UnFriends" Type="EFRelationshipSample.DataObjects.UserDto" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.528" Y="5" />
+        <Point X="1.528" Y="4.438" />
+        <Point X="2.188" Y="4.438" />
+        <Point X="2.188" Y="5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.683" Y="0.279" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\UserDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Friends" />
+      <Property Name="UnFriends" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.Models.City">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAIQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\City.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.Models.Country">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Country.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.Models.Event">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Event.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Speakers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.Models.Speaker">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Speaker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Events" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.DataObjects.SpeakerDto">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\SpeakerDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Events" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelationshipSample.DataObjects.EventDto">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DataObjects\EventDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Speakers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
