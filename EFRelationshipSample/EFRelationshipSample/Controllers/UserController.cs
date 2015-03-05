@@ -3,50 +3,50 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
+using AMSToolkit.Attributes;
 using Microsoft.WindowsAzure.Mobile.Service;
-using EFRelationshipSample.DataObjects;
 using EFRelationshipSample.Models;
 
 namespace EFRelationshipSample.Controllers
 {
-    public class UserController : TableController<UserDto>
+    public class UserController : TableController<User>
     {
-        private MobileServiceContext _context;
-
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            _context = new MobileServiceContext();
-            DomainManager = new GenericDomainManager<UserDto, User>(_context, Request, Services);
+            MobileServiceContext context = new MobileServiceContext();
+            DomainManager = new EntityDomainManager<User>(context, Request, Services);
         }
 
         // GET tables/User
-        public IQueryable<UserDto> GetAllUserDto()
+        [QueryableExpand("Friends,UnFriends")]
+        public IQueryable<User> GetAllUser()
         {
             return Query(); 
         }
 
+        [QueryableExpand("Friends,UnFriends")]
         // GET tables/User/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public SingleResult<UserDto> GetUserDto(string id)
+        public SingleResult<User> GetUser(string id)
         {
             return Lookup(id);
         }
 
         // PATCH tables/User/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task<UserDto> PatchUserDto(string id, Delta<UserDto> patch)
+        public Task<User> PatchUser(string id, Delta<User> patch)
         {
              return UpdateAsync(id, patch);
         }
 
         // POST tables/User
-        public async Task<IHttpActionResult> PostUserDto(UserDto item)
+        public async Task<IHttpActionResult> PostUser(User item)
         {
-            UserDto current = await InsertAsync(item);
+            User current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }
 
         // DELETE tables/User/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task DeleteUserDto(string id)
+        public Task DeleteUser(string id)
         {
              return DeleteAsync(id);
         }

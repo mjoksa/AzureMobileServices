@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AMSToolkit">
+      <HintPath>..\TempLibs\Debug-AMSToolkit\AMSToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
@@ -196,13 +199,13 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DataObjects\EventDto.cs" />
     <Compile Include="DataObjects\SpeakerDto.cs" />
-    <Compile Include="DataObjects\UserDto.cs" />
     <Compile Include="DataObjects\CityDto.cs" />
     <Compile Include="DataObjects\CountryDto.cs" />
+    <Compile Include="DataObjects\UserDto.cs" />
     <Compile Include="GenericDomainManager.cs" />
-    <Compile Include="Migrations\201503032322487_V0.cs" />
-    <Compile Include="Migrations\201503032322487_V0.Designer.cs">
-      <DependentUpon>201503032322487_V0.cs</DependentUpon>
+    <Compile Include="Migrations\201503041206572_V0.cs" />
+    <Compile Include="Migrations\201503041206572_V0.Designer.cs">
+      <DependentUpon>201503041206572_V0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\City.cs" />
@@ -243,8 +246,8 @@
     <None Include="Properties\PublishProfiles\mobile-inviita-test.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503032322487_V0.resx">
-      <DependentUpon>201503032322487_V0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503041206572_V0.resx">
+      <DependentUpon>201503041206572_V0.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -24,8 +24,8 @@ namespace EFRelationshipSample
             // line. Comment it out again when you deploy your service for production use.
             config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
 
-            config.Formatters.Clear();
-            config.Formatters.Add(new JsonMediaTypeFormatter());
+            //config.Formatters.Clear();
+            //config.Formatters.Add(new JsonMediaTypeFormatter());
 
             //Read more about it
             // http://www.asp.net/web-api/overview/formats-and-model-binding/json-and-xml-serialization#handling_circular_object_references
@@ -48,19 +48,20 @@ namespace EFRelationshipSample
             {
 
                 cfg.CreateMap<User, UserDto>();
-                cfg.CreateMap<UserDto, User>().ReverseMap();
+                cfg.CreateMap<User, UserDto>().ReverseMap()
+                    .ForMember(tbl => tbl.MyPropertyForDbOnly, map => map.Ignore());
 
                 cfg.CreateMap<Country, CountryDto>();
                 cfg.CreateMap<Country, CountryDto>().ReverseMap();
 
                 cfg.CreateMap<City, CityDto>();
-                cfg.CreateMap<CityDto, City>().ReverseMap();
+                cfg.CreateMap<City, CityDto>().ReverseMap();
 
                 cfg.CreateMap<Event, EventDto>();
-                cfg.CreateMap<EventDto, Event>().ReverseMap();
+                cfg.CreateMap<Event, EventDto>().ReverseMap();
 
                 cfg.CreateMap<Speaker, SpeakerDto>();
-                cfg.CreateMap<SpeakerDto, Speaker>().ReverseMap();
+                cfg.CreateMap<Speaker, SpeakerDto>().ReverseMap();
           });
 
             // we should use this method to valid the maps created
