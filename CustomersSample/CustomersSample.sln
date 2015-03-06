@@ -16,18 +16,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersSampleService.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersSample.Pcl", "CustomersSample.Pcl\CustomersSample.Pcl.csproj", "{8709FD50-8A69-414B-B551-ABA53C93D159}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TempLibs", "TempLibs", "{943E54E4-5266-4B66-A5E7-93D5525DDFAA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AMSToolkit", "AMSToolkit", "{6E3E21B6-35E8-4F9B-AD2D-D32425782BA5}"
-	ProjectSection(SolutionItems) = preProject
-		TempLibs\Debug-AMSToolkit\AMSToolkit.dll = TempLibs\Debug-AMSToolkit\AMSToolkit.dll
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AMSToolkit.Pcl", "AMSToolkit.Pcl", "{E4570AC0-2E1D-417A-BEF7-ABB979BB1A83}"
-	ProjectSection(SolutionItems) = preProject
-		TempLibs\Debug-AMSToolkit.Pcl\AMSToolkit.dll = TempLibs\Debug-AMSToolkit.Pcl\AMSToolkit.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,9 +61,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6E3E21B6-35E8-4F9B-AD2D-D32425782BA5} = {943E54E4-5266-4B66-A5E7-93D5525DDFAA}
-		{E4570AC0-2E1D-417A-BEF7-ABB979BB1A83} = {943E54E4-5266-4B66-A5E7-93D5525DDFAA}
 	EndGlobalSection
 EndGlobal
