@@ -40,6 +40,10 @@ This sample supports:
 
 :pushpin: [How to creating a dev and prod environments](http://www.saramgsilva.com/index.php/2014/azure-mobile-services-creating-dev-prod-environment/)
 
+:pushpin: [How to change the database](http://www.saramgsilva.com/index.php/2015/azure-mobile-services-how-to-change-the-database/)
+
+:pushpin: [Questions & Answers and Tips for .Net Backend](http://www.saramgsilva.com/index.php/2015/azure-mobile-services-qa-and-tips-for-net-backend/)
+
 ## :white_medium_square: Avoid nightmares
 
 :pushpin: [Avoid nightmares updating Azure Mobile Services projects](http://www.saramgsilva.com/index.php/2015/avoid-nightmares-updating-azure-mobile-services-projects/)
