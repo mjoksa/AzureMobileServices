@@ -42,6 +42,9 @@ This sample supports:
 
 :pushpin: [How to change the database](http://www.saramgsilva.com/index.php/2015/azure-mobile-services-how-to-change-the-database/)
 
+:pushpin:[How to do Custom login in Azure Mobile Services](http://martinnormark.com/how-to-do-custom-login-in-azure-mobile-services/)
+
+
 :pushpin: [Questions & Answers and Tips for .Net Backend](http://www.saramgsilva.com/index.php/2015/azure-mobile-services-qa-and-tips-for-net-backend/)
 
 ## :white_medium_square: Avoid nightmares
