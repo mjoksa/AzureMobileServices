@@ -6,6 +6,8 @@ Samples and articles to help developers to use Azure Mobile Services.
 
 ## :white_medium_square: Samples provided 
 
+:warning: The samples provided uses [AMSToolkit](https://github.com/saramgsilva/AMSToolkit).
+
 :pushpin: [CustomersSample](https://github.com/saramgsilva/AzureMobileServices/tree/master/CustomersSample)
 
 <MTMarkdownOptions output='html4'>
@@ -30,7 +32,12 @@ This sample supports:
 This sample supports:
 - Migrations
 
-:warning: The samples provided uses [AMSToolkit](https://github.com/saramgsilva/AMSToolkit).
+:pushpin: [EFRelationshipSample](https://github.com/saramgsilva/AzureMobileServices/tree/master/EFRelationshipSample)
+
+:warning: this sample is in progress!
+
+
+
 
 ## :white_medium_square: How to
 
